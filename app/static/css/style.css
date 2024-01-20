@@ -1,0 +1,9 @@
+body {
+    color: rgb(21, 21, 21);
+    background: rgb(119, 213, 249);
+    background: linear-gradient(90deg, rgba(119, 213, 249, 1) 17%, rgba(221, 250, 255, 1) 100%);
+}
+
+.predict-url {
+    color: rgb(43, 43, 43);
+}

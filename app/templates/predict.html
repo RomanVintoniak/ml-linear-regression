@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  {% if result %}
+  <h3 class="text-center text-black mt-4">
+    Your predicted score is: {{ result }}
+  </h3>
+  {% endif %}
+  <div class="d-flex align-items-center justify-content-center mt-5">
+    <form method="POST" class="w-6 text-black">
+      <div class="mb-3">
+        <label class="form-label">Hours Studied</label>
+        <input type="number" class="form-control" name="hoursStudied" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Previous Score</label>
+        <input type="number" class="form-control" name="prevScore" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Extracurricular Activities</label>
+        <input type="number" class="form-control" name="activities" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Sleep Hours</label>
+        <input type="number" class="form-control" name="sleepHours" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Sample Question Papers Practiced</label>
+        <input type="number" class="form-control" name="sampleQuestionPapersPracticed" required>
+      </div>
+      <br>
+      <button type="submit" class="col-12 btn btn-success">Predict</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

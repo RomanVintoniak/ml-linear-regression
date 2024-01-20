@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <div class="text-center mt-5">
+    <h1>LR | Student Performance</h1>
+    <hr>
+    <h3>Here you can predict your performance</h3>
+  </div>
+  <br>
+  <h3 class="text-center mt-5">
+    <a href="{{ url_for('prediction') }}" class="predict-url">
+      Predict my score
+    </a>
+  </h3>
+</div>
+{% endblock %}
