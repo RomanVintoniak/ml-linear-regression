@@ -2,7 +2,7 @@ from flask import jsonify, request
 from app import model
 from . import api
 
-@api.route('/prediction', methods=['POST'])
+@api.route('/prediction', methods=['GET'])
 def api_prediction():
     data = request.get_json()
     
