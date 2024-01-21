@@ -17,8 +17,6 @@ Web App - [link here ](https://lr-student-performance.onrender.com/)
 
 <br>
 
-API endpoint
+GET /api/prediction
 
 ![photo](Screenshots/api.png)
-
-<br><br>
